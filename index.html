@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Omar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Omar Mohamad Abou Ghoche</h1>
+    <h2 onmouseover="showTitles()">Passe o mouse sobre meu nome para vê-lo em árabe (original) e japonês</h2>
+    <div id="titles" style="display: none;">
+      <h3>Árabe: عمر محمد أبو غوش</h3>
+      <h3>Japonês: オマール </h3>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <figure class="museum-frame">
+          <img id="omar" class="decorated-frame" src="./images/sel-portrait.jpg" alt="Autorretrato de Omar, Fotografia" />
+          <figcaption class="museum-caption">self-portrait, Dec. 2024, light on sensor, 2208 x 2944 px</figcaption>
+        </figure>
+        <div>
+          <h2>Sobre Mim</h2>
+          <p>
+            Sou Omar, desenvolvedor FullStack apaixonado por criar aplicações que combinam funcionalidade e design.
+            Com experiência em HTML, CSS, Python e JavaScript, trabalho para transformar ideias em projetos reais.
+            Meu objetivo é unir tecnologia e criatividade para soluções inovadoras.
+          </p>
+          <p>
+            Sou apaixonado por arte, fotografia e design, sempre explorando maneiras criativas de expressar ideias.
+            Adoro correr, praticando regularmente e participando de eventos esportivos, o que também reflete meu
+            interesse por um estilo de vida ativo.
+            Sou fascinado pela cultura japonesa, estudando a língua e me inspirando nos valores e tradições do Japão.
+          </p>
+          <p>
+            Sou entusiasta de Inteligência Artificial e uso frequentemente assistentes virtuais para me auxiliar em projetos, estudar e otimizar meu trabalho.
+            Essa integração com IA me ajuda a resolver problemas, melhorar códigos e explorar novas ideias em design e programação.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projetos</h2>
+      <p>
+        <strong>Instagram da Acorrefoz:</strong> Cuido do perfil da Acorrefoz, criando conteúdo visual e gerenciando a
+        página.
+        Utilizo o Canva para elaborar designs impactantes que engajam e informam a comunidade de corredores.
+        <br>
+        Dê uma olhada:
+        <a href="https://www.instagram.com/acorrefoz/" title="Instagram da Acorrefoz" target="_blank" rel="noopener noreferrer">
+          <img src="" alt="Acorrefoz">
+        </a>
+      </p>
+      <p>
+        <strong>Fotografia no Behance:</strong> Minhas fotos estão disponíveis no Behance, onde compartilho imagens capturadas com um olhar artístico e cuidadoso.
+      </p>
+      <p>
+        <strong>Suite de Aplicações CLI:</strong> Desenvolvi ferramentas Python incluindo calculadora científica, gerenciador de tarefas, tradutor multi-idiomas e jogos simples.
+        <br>
+        Acesse aqui:
+        <a href="https://github.com/OmarGhoche/JetBrains_academy_python" title="Instagram da Acorrefoz" target="_blank" rel="noopener noreferrer">
+          <img src="" alt="Python CLI">
+        </a>
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Habilidades</h2>
+      <!-- Liste habilidades -->
+    </section>
+
+    <section id="contact">
+      <div class="container">
+
+        <h2>Contato</h2>
+        <div class="contact-methods">
+          <div>
+            <h3>Fale comigo</h3>
+            <form>
+              <input type="text" name="name" id="name" placeholder="Seu nome" required />
+              <input type="email" name="e-mail" id="e-mail" placeholder="Seu e-mail" required />
+              <input type="tel" name="telephone" id="telephone" placeholder="Seu telefone (opcional)" />
+              <textarea name="message" id="message" placeholder="Sua mensagem" required></textarea>
+              <input type="submit" value="Enviar" />
+            </form>
+          </div>
+          <div>
+            <h3>Me acompanhe</h3>
+            <ul class="social-links">
+              <li><a href="#" title="Me depure no GitHub" target="_blank" rel="noopener noreferrer"><img src=""
+                    alt="GitHub"></a></li>
+              <li><a href="#" title="Siga-me no Instagram" target="_blank" rel="noopener noreferrer"><img src=""
+                    alt="Instagram"></a></li>
+              <li><a href="https://www.linkedin.com/in/omarghoche/" title="Vamos fazer networking no LinkedIn"
+                  target="_blank" rel="noopener noreferrer"><img src="" alt="LinkedIn"></a></li>
+              <li><a href="https://www.behance.net/gallery/216370805/Lightroom-Photos"
+                  title="Veja minhas fotos no Behance" target="_blank" rel="noopener noreferrer"><img src=""
+                    alt="Behance"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h3>Venha me visitar</h3>
+          <p>
+            Foz do Iguaçu / Paraná
+            <!-- add imagem das cataratas -->
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Omar. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+<script>
+  document.querySelector('h1').addEventListener('mouseover', function () {
+    const titlesDiv = document.getElementById('titles');
+    titlesDiv.style.display = 'block';
+    titlesDiv.style.position = 'absolute';
+    titlesDiv.style.backgroundColor = 'white';
+    titlesDiv.style.border = '1px solid black';
+    titlesDiv.style.padding = '10px';
+    titlesDiv.style.zIndex = '1000';
+    titlesDiv.style.top = `${this.getBoundingClientRect().bottom + window.scrollY}px`;
+    titlesDiv.style.left = `${this.getBoundingClientRect().left + window.scrollX}px`;
+  });
+  document.querySelector('h1').addEventListener('mouseout', function () {
+    document.getElementById('titles').style.display = 'none';
+  });
+</script>
+
+</html>

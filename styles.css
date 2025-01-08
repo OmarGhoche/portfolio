@@ -1,0 +1,244 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body,
+input,
+textarea {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header,
+main h2,
+section h3,
+form [type="submit"] {
+  font-family: "Bungee", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Layout Container */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+/* Header Styles */
+header {
+  padding: 16px 0;
+  background-color: #cd189c;
+  /* color: #ecf0f1; */
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+header nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+/* Main Content */
+main {
+  padding: 24px 0 50px;
+}
+
+main .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+section {
+  margin-top: 50px;
+}
+
+/* Main Headings */
+main h2,
+section h3 {
+  margin-bottom: 20px;
+  padding-top: 8px;
+  color: #cd189c;
+}
+
+main h2 {
+  margin-bottom: 40px;
+  font-size: 26px;
+}
+
+main p {
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+/* Store Image */
+#omar {
+  height: 450px;
+  margin-right: 32px;
+}
+
+.museum-frame {
+  text-align: center;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.decorated-frame {
+  border: 15px solid #d4af37;
+  border-radius: 10px; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 
+              inset 0 5px 10px rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  background: linear-gradient(145deg, #f8f3dc, #d4af37);
+}
+
+.museum-caption {
+  margin-top: 10px;
+  padding: 10px;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+
+
+/* Brand Logos */
+.brands-list img {
+  height: 24px;
+}
+
+.brands-list li {
+  display: inline;
+  margin-right: 8px;
+}
+
+/* Contact Section */
+#contact .container {
+  display: block;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Social Links */
+.social-links img {
+  height: 24px;
+}
+
+.social-links li {
+  display: inline;
+  margin-right: 8px;
+}
+
+/* Form Styles */
+form input,
+textarea {
+  display: block;
+  width: 320px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+form textarea {
+  resize: none;
+  height: 180px;
+}
+
+form [type="submit"] {
+  background-color: #cd189c;
+  color: #ecf0f1;
+  border: none;
+  cursor: pointer;
+}
+
+form [type="submit"]:hover {
+  background-color: #80376c;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: #80376c;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #cd189c;
+  color: #ecf0f1;
+  padding: 16px 0;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav {
+    margin-top: 16px;
+  }
+
+  main .container {
+    flex-direction: column;
+  }
+
+  #omar {
+    height: auto;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .contact-methods {
+    flex-direction: column;
+  }
+
+  .contact-methods > div {
+    margin-bottom: 32px;
+  }
+
+  form input,
+  textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  #omar {
+    height: 350px;
+  }
+
+  form input,
+  textarea {
+    width: 100%;
+  }
+}
