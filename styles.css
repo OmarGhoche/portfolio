@@ -88,7 +88,7 @@ main p {
   text-align: justify;
 }
 
-/* Store Image */
+/* About Image */
 #omar {
   height: 450px;
   margin-right: 32px;
@@ -122,8 +122,6 @@ main p {
   max-width: 300px;
   line-height: 1.5;
 }
-
-
 
 /* Brand Logos */
 .brands-list img {
@@ -207,15 +205,19 @@ footer p {
     margin-top: 16px;
   }
 
+  main {
+    padding: 0 0 50px;
+  }
+
   main .container {
     flex-direction: column;
   }
 
   #omar {
-    height: auto;
+    height: 400px;
     max-width: 100%;
     margin-right: 0;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
   }
 
   .contact-methods {
