@@ -10,30 +10,37 @@
 
 <body>
   <header>
-    <h1>Omar Mohamad Abou Ghoche</h1>
-    <h2 onmouseover="showTitles()">Hover/toque meu nome para vê-lo em árabe (original) e japonês</h2>
-    <div id="titles" style="display: none;">
-      <h3>Árabe: عمر محمد أبو غوش</h3>
-      <h3>Japonês: オマール </h3>
-    </div>
+    <div class="container">
+      <div>
 
-    <nav>
-      <ul>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-    </nav>
+        <h1 style="width: fit-content;">Omar Mohamad Abou Ghoche</h1>
+        <h2 onmouseover="showTitles()" style="font-size: 15px;">Hover/toque meu nome para vê-lo em árabe (original) e
+          japonês</h2>
+        <div id="titles" style="display: none;">
+          <h3>Árabe: عمر محمد أبو غوش</h3>
+          <h3>Japonês: オマール </h3>
+        </div>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <main>
     <section id="about">
       <div class="container">
         <figure class="museum-frame">
-          <img id="omar" class="decorated-frame" src="./images/sel-portrait.jpg"
-            alt="Autorretrato de Omar, Fotografia" />
-          <figcaption class="museum-caption">self-portrait, Dec. 2024, <br> light on sensor, 2208 x 2944 px</figcaption>
+          <img id="omar" src="./images/self-portrait-2-bw.jpg" alt="Autorretrato de Omar, Fotografia" />
+          <figcaption class="museum-caption">self-portrait 2, Jan. 2025, <br> light on sensor, 2208 x 2944 px
+          </figcaption>
         </figure>
         <div>
           <h2>Sobre Mim</h2>
@@ -46,13 +53,19 @@
             Sou apaixonado por arte, fotografia e design, sempre explorando maneiras criativas de expressar ideias.
             Adoro correr, praticando regularmente e participando de eventos esportivos, o que também reflete meu
             interesse por um estilo de vida ativo.
+          </p>
+          <p>
+            Tenho grande interesse por idiomas e sou poliglota, sempre buscando aprender novas línguas.
+            No momento estou focado no japonês.
             Sou fascinado pela cultura japonesa, estudando a língua e me inspirando nos valores e tradições do Japão.
           </p>
           <p>
             Sou entusiasta de Inteligência Artificial e uso frequentemente assistentes virtuais para me auxiliar em
             projetos, estudar e otimizar meu trabalho.
             Essa integração com IA me ajuda a resolver problemas, melhorar códigos e explorar novas ideias em design e
-            programação.
+            programação. Quero ser reconhecido como um desenvolvedor e designer (<strong id="developer">Dev</strong>
+            <b>&</b> <strong id="designer">Designer</strong>),
+            unindo criatividade e tecnologia em cada projeto.
           </p>
         </div>
       </div>
@@ -60,49 +73,61 @@
 
     <section id="projects">
       <div class="container">
-
         <h2>Projetos</h2>
         <p>
           <strong>Instagram da Acorrefoz:</strong> Cuido do perfil da Acorrefoz, criando conteúdo visual e gerenciando a
           página.
           Utilizo o Canva para elaborar designs impactantes que engajam e informam a comunidade de corredores.
           <br>
-          Dê uma olhada:
           <a href="https://www.instagram.com/acorrefoz/" title="Instagram da Acorrefoz" target="_blank"
             rel="noopener noreferrer">
-            <img src="" alt="Acorrefoz">
+            Dê uma olhada
           </a>
         </p>
         <p>
           <strong>Fotografia no Behance:</strong> Minhas fotos estão disponíveis no Behance, onde compartilho imagens
           capturadas com um olhar artístico e cuidadoso.
+          <br>
+          <a href="https://www.behance.net/gallery/216370805/Lightroom-Photos" title="Behance do Omar" target="_blank"
+            rel="noopener noreferrer">Veja minhas fotografias</a>
+          <!-- <iframe src="https://www.behance.net/gallery/216370805/Lightroom-Photos" width="100%" height="400" frameborder="0" allowfullscreen></iframe> -->
         </p>
         <p>
           <strong>Suite de Aplicações CLI:</strong> Desenvolvi ferramentas Python incluindo calculadora científica,
           gerenciador de tarefas, tradutor multi-idiomas e jogos simples.
           <br>
-          Acesse aqui:
-          <a href="https://github.com/OmarGhoche/JetBrains_academy_python" title="Instagram da Acorrefoz"
-            target="_blank" rel="noopener noreferrer">
-            <img src="" alt="Python CLI">
-          </a>
+          <a href="https://github.com/OmarGhoche/JetBrains_academy_python" title="Python CLI" target="_blank"
+            rel="noopener noreferrer">Acesse aqui</a>
+          <!-- <iframe src="https://github.com/OmarGhoche/JetBrains_academy_python" width="100%" height="400" frameborder="0" allowfullscreen></iframe> -->
+        </p>
+        <p>
+          <strong>Artes para Amigos:</strong> Como hobby, realizo artes simples para amigos, incluindo desenhos,
+          ilustrações, convites e montagens no Canva ou softwares de edição gráfica. É uma maneira de explorar minha
+          criatividade e
+          ajudar as pessoas ao meu redor, mesmo sem remuneração.
         </p>
       </div>
     </section>
 
     <section id="skills">
       <div class="container">
-
-        <h2>Habilidades</h2>
-        - Linguagens: Python (Django), Java, JavaScript,
-        TypeScript
-        - Front-end: HTML5, CSS3, React (básico)
-        - Dados: SQL, NoSQL, Gremlin
-        - DevOps: Git, GitHub, Docker
-        - Metodologias: Scrum, Kanban
-
-        <!-- CV -->
+        <h2 class="dev">Habilidades</h2>
+        <ul>
+          <li><strong>Linguagens:</strong> Python (Django), Java, JavaScript, TypeScript</li>
+          <li><strong>Front-end:</strong> HTML5, CSS3, React (básico)</li>
+          <li><strong>Dados:</strong> SQL, NoSQL, Gremlin</li>
+          <li><strong>DevOps:</strong> Git, GitHub, Docker</li>
+          <li><strong>Metodologias:</strong> Scrum, Kanban</li>
+        </ul>
+        <br>
+        <p>
+          <strong>Currículo:</strong> Baixe meu CV em formato PDF
+          <br>
+          <a href="omar-cv-pt.pdf" target="_blank" rel="noopener noreferrer">Português</a> |
+          <a href="omar-cv-en.pdf" target="_blank" rel="noopener noreferrer">Inglês</a>
+        </p>
       </div>
+
     </section>
 
     <section id="contact">
@@ -110,37 +135,40 @@
         <h2>Contato</h2>
         <div class="contact-methods">
           <div>
-            <h3>Fale comigo</h3>
-            <form>
-              <input type="text" name="name" id="name" placeholder="Seu nome" required />
-              <input type="email" name="e-mail" id="e-mail" placeholder="Seu e-mail" required />
-              <input type="tel" name="telephone" id="telephone" placeholder="Seu telefone (opcional)" />
-              <textarea name="message" id="message" placeholder="Sua mensagem" required></textarea>
-              <input type="submit" value="Enviar" />
-            </form>
-          </div>
-          <div>
             <h3>Me acompanhe</h3>
             <ul class="social-links">
-              <li><a href="#" title="Me depure no GitHub" target="_blank" rel="noopener noreferrer"><img src=""
-                    alt="GitHub"></a></li>
-              <li><a href="#" title="Siga-me no Instagram" target="_blank" rel="noopener noreferrer"><img src=""
-                    alt="Instagram"></a></li>
-              <li><a href="https://www.linkedin.com/in/omarghoche/" title="Vamos fazer networking no LinkedIn"
-                  target="_blank" rel="noopener noreferrer"><img src="" alt="LinkedIn"></a></li>
-              <li><a href="https://www.behance.net/gallery/216370805/Lightroom-Photos"
-                  title="Veja minhas fotos no Behance" target="_blank" rel="noopener noreferrer"><img src=""
-                    alt="Behance"></a>
+              <li>
+                <a href="#" title="Me depure no GitHub" target="_blank" rel="noopener noreferrer">
+                  <img src="./images/github.png" alt="GitHub">
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Siga-me no Instagram" target="_blank" rel="noopener noreferrer">
+                  <img src="./images/instagram.png" alt="Instagram">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/omarghoche/" title="Vamos fazer networking no LinkedIn"
+                  target="_blank" rel="noopener noreferrer">
+                  <img src="./images/linkedin.png" alt="LinkedIn">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/gallery/216370805/Lightroom-Photos"
+                  title="Veja minhas fotos no Behance" target="_blank" rel="noopener noreferrer">
+                  <img src="./images/behance.svg" alt="Behance">
+                </a>
               </li>
             </ul>
           </div>
-        </div>
-        <div>
-          <h3>Venha me visitar</h3>
-          <p>
-            Foz do Iguaçu / Paraná
-            <!-- add imagem das cataratas -->
-          </p>
+          <div>
+            <h3>Onde Estou?</h3>
+            <p style="width: max-content; margin: 0 auto;"></p>
+              Estou localizado em Foz do Iguaçu,
+              <br>cidade famosa pelas incríveis Cataratas.
+            </p>
+            <img id="cataratas" src="./images/cataratas.jpg" alt="Cataratas do Iguaçu">
+          </div>
         </div>
       </div>
     </section>
@@ -156,8 +184,9 @@
     const titlesDiv = document.getElementById('titles');
     titlesDiv.style.display = 'block';
     titlesDiv.style.position = 'absolute';
-    titlesDiv.style.backgroundColor = 'white';
-    titlesDiv.style.border = '1px solid black';
+    titlesDiv.style.backgroundColor = '#27ae60';
+    titlesDiv.style.border = '5px solid black';
+    titlesDiv.style.color = 'white';
     titlesDiv.style.padding = '10px';
     titlesDiv.style.zIndex = '1000';
     titlesDiv.style.top = `${this.getBoundingClientRect().bottom + window.scrollY}px`;
