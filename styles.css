@@ -36,21 +36,25 @@ a {
 }
 
 /* Typography */
-body,
-input,
-textarea {
-  font-family: "Roboto", sans-serif;
+body {
+  font-family: "Lato", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-header,
-main h2,
-section h3 {
-  font-family: "Bungee", sans-serif;
+header {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  cursor: var(--cursor-designer);
+}
+
+main h2,
+section h3 {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* Layout Container */
@@ -207,6 +211,10 @@ main p {
   border: 3px solid black;
 }
 
+#skills li {
+  list-style-type: none;
+}
+
 /* Contact Section */
 #contact .container {
   display: block;
@@ -241,9 +249,9 @@ footer {
   cursor: var(--cursor-dev);
 }
 
-/* footer p {
+footer p {
   text-align: center;
-} */
+}
 
 /* Media Queries */
 @media (max-width: 768px) {
