@@ -96,6 +96,20 @@ header h2 {
   font-size: 18px;
 }
 
+header h1 {
+  width: fit-content;
+}
+
+#titles {
+  display: none;
+  position: absolute;
+  background-color: #27ae60;
+  border: 5px solid black;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+}
+
 /* Main Content */
 main {
   padding: 24px 0 50px;
