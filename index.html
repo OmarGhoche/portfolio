@@ -192,17 +192,20 @@
   </main>
 
   <footer>
-    <p>© 2025 Omar. Todos os direitos reservados.</p>
+    <p>© <span id="year"></span> Omar. Todos os direitos reservados.</p>
   </footer>
 </body>
 
 <script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+
   document.querySelector('h1').addEventListener('mouseover', function () {
     const titlesDiv = document.getElementById('titles');
     titlesDiv.style.display = 'block';
     titlesDiv.style.top = `${this.getBoundingClientRect().bottom + window.scrollY}px`;
     titlesDiv.style.left = `${this.getBoundingClientRect().left + window.scrollX}px`;
   });
+  
   document.querySelector('h1').addEventListener('mouseout', function () {
     document.getElementById('titles').style.display = 'none';
   });
